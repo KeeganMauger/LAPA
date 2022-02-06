@@ -21,17 +21,17 @@ Ty_next = zeros(ny,nx);
 % Boundary conditions
 T(:,1) = 0;     %Bottom
 T(:,ny) = 0;    %Top
-T(1,:) = 0;     %Left
+T(1,:) = 1;     %Left
 T(nx,:) = 1;    %Right
 
 Tx(:,1) = 0;     %Bottom
 Tx(:,ny) = 0;    %Top
-Tx(1,:) = 0;     %Left
+Tx(1,:) = 1;     %Left
 Tx(nx,:) = 1;    %Right
 
 Ty(:,1) = 0;     %Bottom
 Ty(:,ny) = 0;    %Top
-Ty(1,:) = 0;     %Left
+Ty(1,:) = 1;     %Left
 Ty(nx,:) = 1;    %Right
 
 m = 2:nx-1;             % From 2 to 99 because BCs at 1 and 100
@@ -49,17 +49,17 @@ for k = 1:NI
     
     Ty(:,1) = 0;     %Bottom
     Ty(:,ny) = 0;    %Top
-    Ty(1,:) = 0;     %Left
+    Ty(1,:) = 1;     %Left
     Ty(nx,:) = 1;    %Right
     
     Tx(:,1) = 0;     %Bottom
     Tx(:,ny) = 0;    %Top
-    Tx(1,:) = 0;     %Left
+    Tx(1,:) = 1;     %Left
     Tx(nx,:) = 1;    %Right
     
     T(:,1) = 0;     %Bottom
     T(:,ny) = 0;    %Top
-    T(1,:) = 0;     %Left
+    T(1,:) = 1;     %Left
     T(nx,:) = 1;    %Right
     
     figure(1)
